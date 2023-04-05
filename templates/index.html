@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Button Example</title>
+  </head>
+
+  <body>
+    <form action="/send" method="POST">
+      <button type="submit">Click me!</button>
+    </form>
+
+    <h1>Loop Output:</h1>
+    <ul>
+      {% for output in loop_output %}
+        <li>{{ output }}</li>
+      {% endfor %}
+    </ul>
+
+
+  </body>
+</html>
